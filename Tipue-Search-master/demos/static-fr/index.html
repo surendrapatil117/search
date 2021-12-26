@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Recherche Tipue Demonstration Mode Statique</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400|Merriweather:300,300italic" rel="stylesheet">
+
+<link rel="stylesheet" href="../../inc/normalize.css">
+<link rel="stylesheet" href="../../inc/standard.css">
+
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+</head>
+<body>
+
+
+<!-- head -->
+
+
+<div id="head"><div class="head_icon"><a href="http://www.tipue.com"><img src="../../img/head.png" alt="Tipue"></a></div></div>
+
+
+<!-- body -->
+
+
+<div class="center" style="padding-top: 90px;"><a href="http://www.tipue.com/search"><img src="../../img/radio3.png" alt="Tipue Search"></a></div>
+<div class="center"><div class="inner" style="padding-top: 27px;"><h2>Recherche Tipue 6.0 - Demonstration Mode Statique</h2></div></div>
+
+<div class="block" style="padding-top: 39px;">
+
+<form id="tipue_search" action="search.html">
+<input type="text" name="q" id="tipue_search_input" autocomplete="off" placeholder="Mots clés" required>
+<input type="image" id="search" name="" src="tipuesearch/img/search.png" class="tipue_button search" alt="Recherche">
+<a href="#" id="help" class="tipue_button help" onclick="return false;"><abbr title="Aide">?</abbr></a>
+<div class="tipue_search_messagepop tipue_search_pop">
+   <h1>Aide pour recherche</h1>
+   <p style="text-align:left;margin-left:40px;">Vous pouvez ajouter&nbsp;:</p>
+   <ul>
+       <li>Le caractère de troncature point d’interrogation (?) n'importe où dans un mot pour remplacer n'importe quel caractère unique.<br>Exemple&nbsp;: <strong>étai?</strong> correspondra à <strong>étais</strong> et <strong>était</strong>.</li>
+       <li>Le caractère de troncature asterisk (*) au début ou à la fin d’un mot pour remplacer zéro ou plusieurs caractères.<br>Exemple&nbsp;: <strong>étai*</strong> correspondra à <strong>était</strong> et <strong>étaient</strong>.</li>
+       <li>Des "guillemets droits double" autour des groupes de mots à rechercher.<br>Exemple&nbsp;: <strong>"moteur de recherche"</strong>.</li>
+       <li>Un –trait d'union avant un mot pour exclure de tous les résultats qui incluent ce mot. Pour les groupes de mots, mettre le "-trait d’union" à l'intérieur du guillemet droit doubel gauche pour exclure le groupe de mots.<br>Exemple&nbsp;: <strong>-plugin</strong> ou <strong>"-jQuery plugin"</strong> exclura les résultats contenant le mot <strong>plugin</strong> ou le group des mots <strong>jQuery plugin</strong>.</li>
+   </ul>
+   <p>Toutes les recherches sont insensible à la casse des caractères. Toutefois les caractères avec accents sont considérés différents que ceux sans accents. Exemple : Si vous cherchez le mot <strong>trouve</strong>, le moteur de recherche ne trouvera pas <strong>trouvé</strong>.</p>
+   <p><button class="close">Fermer</button></p>
+</div>
+<label for="tipue_per_page" style="padding-left:30px;">Résultats par page&nbsp;:</label>
+<select name="per_page" id="tipue_per_page">
+<option value="7" selected="selected">7</option>
+<option value="20">20</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select>
+<fieldset style="border:none;">
+<legend style="display:inline;">Correspondance:</legend>
+<input type="radio" name="matchtype" id="any" value="0" checked="checked"><label for="any"> au moins un terme</label> &nbsp; <input type="radio" name="matchtype" id="all" value="1"><label for="all"> tous les termes</label>
+</fieldset>
+</form>
+
+<div class="norm" style="padding-top: 27px;">
+<a href="http://www.tipue.com/search">Tipue Recherche</a> est un moteur de recherche réalisés comme plugiciel jQuery. Ceci est une démonstration du mode statique. Entrez le mot "tipue" dans la boîte de recherche ci-dessus.
+</div>
+</div>
+
+<div class="center ital" style="padding: 39px 0 30px 0;font-size: smaller;">&copy; 2016, <a href="http://www.tipue.com" target="_blank">Recherche fournie par Tipue</a>. Frabriquer à Londre et au Canada.</div>
+
+<script src="../../inc/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+
+</body>
+</html>
